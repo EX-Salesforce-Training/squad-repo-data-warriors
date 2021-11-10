@@ -1,10 +1,13 @@
 div {
-    background:black;
+    background:darkgreen;
 }
 p {
-    color:blue;
+    color:rgb(0, 140, 255);
+    align-content: space-between;
 }
 li {
+    flex-direction: column-reverse;
+    justify-content: center;
     size:16pt;
 }
 ol {
@@ -26,7 +29,14 @@ ul {
     padding-left: 40px;
 }
 div.column {
-    width:50%;
+    width:25%;
     float: left;
     margin-top: 2.2em;
+}
+
+aside {
+    margin-top: 1em;
+}
+class {
+    float: left;
 }
