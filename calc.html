@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="icon" type="image/svg" href="imgs/profile-icon-tab.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Button style specific for calculator-->
     <style>
         button {
             width: 50px;
@@ -23,10 +26,13 @@
 
 <body>
     <!-- Navbar -->
-    <section class="nav-bar">
+    <section class="nav-bar top-nav-bar">
         <div class="left-side">
             <div class="nav-link">
                 <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="index.html#about">About</a>
             </div>
             <div class="nav-link">
                 <a href="index.html#videos">Videos</a>
@@ -40,45 +46,55 @@
             <div>TREVOR COLTON</div>
         </div>
     </section>
+    <!-- End of Navbar -->
 
-    <!-- calculator -->
-    <div class="center padding-page">
-        <div class="calculator">
-            <!-- display -->
-            <input type="text" class="calc-display" id="calc-display" disabled>
-            <!-- keys -->
-            <div class="keys">
-                <!-- 4 rows of keys -->
-                <div class="row-calc">
-                    <button value="7">7</button>
-                    <button value="8">8</button>
-                    <button value="9">9</button>
-                    <button value="+" class="operator">+</button>
-                </div>
-                <div class="row-calc">
-                    <button value="4">4</button>
-                    <button value="5">5</button>
-                    <button value="6">6</button>
-                    <button value="-" class="operator">-</button>
-                </div>
-                <div class="row-calc">
-                    <button value="1">1</button>
-                    <button value="2">2</button>
-                    <button value="3">3</button>
-                    <button value="*" class="operator">*</button>
-                </div>
-                <div class="row-calc">
-                    <button value="C" class="operator">C</button>
-                    <button value="0">0</button>
-                    <button value="/" class="operator">/</button>
-                    <button value="=" class="operator">=</button>
+    <div class="content padding" style="max-width: 1000px;">
+        <h1 class="border-bottom">Embedded Calculator</h1>
+        <!-- Calculator -->
+        <div class="center padding-16">
+            <div class="calculator">
+                <!-- display on calc -->
+                <input type="text" class="calc-display" id="calc-display" disabled>
+                <div>
+                    <!-- 4 rows of buttons on calc -->
+                    <div class="row-calc">
+                        <button value="7">7</button>
+                        <button value="8">8</button>
+                        <button value="9">9</button>
+                        <button value="+" class="operator">+</button>
+                    </div>
+                    <div class="row-calc">
+                        <button value="4">4</button>
+                        <button value="5">5</button>
+                        <button value="6">6</button>
+                        <button value="-" class="operator">-</button>
+                    </div>
+                    <div class="row-calc">
+                        <button value="1">1</button>
+                        <button value="2">2</button>
+                        <button value="3">3</button>
+                        <button value="*" class="operator">*</button>
+                    </div>
+                    <div class="row-calc">
+                        <button value="C" class="operator">C</button>
+                        <button value="0">0</button>
+                        <button value="/" class="operator">/</button>
+                        <button value="=" class="operator">=</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End of Calculator -->
     </div>
-    <!-- calculator body ends -->
 
-    <script type="text/javascript" src="C:\Users\colto\squad-repo-data-warriors\script.js"></script>
+    <!-- JavaScript file for calculator functions -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Website Owned and Operated by Trevor Colton</p>
+    </footer>
 </body>
 
 </html>

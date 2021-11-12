@@ -15,14 +15,14 @@ function calculate(event) {
     if (clickedButtonValue === '=') {
         // check if the display is not empty then only do the calculation
         if (display.value !== '') {
-            // calculate and show the answer to display
+            // using eval() funct to determing arithmetic expression
             display.value = eval(display.value);
         }
     } else if (clickedButtonValue === 'C') {
         // clear display
         display.value = ''; 
     } else {
-        // otherwise concatenate it to the display
+        // else display current expression
         display.value += clickedButtonValue;
     }
 }
