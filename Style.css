@@ -1,89 +1,118 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, ::after,::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+html{
+  font-size: 100%;
+}
+:root{
+  --indigo-50: #e5e8ff;
+  --indigo-100: #ccd0ff;
+  --indigo-200: #99a2ff;
+  --indigo-300: #6673ff;
+  --indigo-400: #3344ff;
+  --indigo-500: #0015ff;
+  --indigo-600: #0011cc;
+  --indigo-700: #000d99;
+  --indigo-800: #000866;
+  --indigo-900: #000433;
+  font-size: 16px;
+}
 body{
-    background-color: #E0EFDE;
-    color: #49416D;
-    line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  background-color: var(--indigo-50);
+  color: var(--indigo-900);
 }
 
-ul,ol{
-    list-style-type: none;
-}
-
-#logo{
-    text-align: center;
-    margin: 25px;
-}
-
-img{
-    width: 100%;
-    height: 500px;
-}
-
-.about-section{
-    max-width: 800px;
-    width: 80%;
-    margin: 0 auto;
-}
-.about-para{
-    margin: 15px auto;
-    padding: 20px;
-    background-color: #B3F2DD;
-    border-radius: 10px;
-}
-
-.tech-list{
-    background-color: #B3F2DD;
-    padding: 20px;
-    text-align: center;
+a{
+  color: var(--indigo-900);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
-.new-tech-list{
-    border-radius: 10px;
+.img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
 }
-.useful-links{
-    text-align: center;
-    margin: 15px;
+
+.container{
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+h1{
+  font-weight: 400;
+}
+/* HEADER */
+.header{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display: flex;
+}
+.navbar a{
+  margin-left: 15px;
+}
+
+
+.banner{
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+.banner-info{
+  width: 50%;
+}
+.banner-img{
+  width: 50%;
+}
+.banner img{
+  width: 400px;
 }
 
 
-.form{
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    background-color: #fff;
-    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
-    padding: 25px;
-    margin-top: 150px;
+/* Skills section */
+
+.skills{
+  text-align: center;
+  height: 30vh;
+
 }
 
-input[type=number]{
-    width: 20%;
-    margin: 5px auto;
-    padding: 5px;
-    font-size: 20px;
-    display: block;
+.skills-icons{
+  display: flex;
+  height: 100%;
+  justify-content:space-around;
+  align-items: center;
 }
 
-.btn{
-    outline: none;
-    border: none;
-    padding: 10px;
-    background-color: #49416D;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
+section h1{
+  border-bottom: 2px solid var(--indigo-900);
+  padding-bottom: 10px;
+  width: 20%;
+  margin: auto;
 }
 
-.result{
-    border: 1px solid #49416D;
-    margin-top: 15px;
+
+
+footer{
+  background-color: var(--indigo-900);
+  color: var(--indigo-100);
+  padding: 3rem;
+  text-align: center;
+  margin-top: 2rem;
 }
