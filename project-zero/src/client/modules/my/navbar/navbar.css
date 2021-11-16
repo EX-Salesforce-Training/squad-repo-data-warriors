@@ -1,0 +1,49 @@
+@import "../app/app.css";
+
+/* Navigation Bar Styles */
+.upper-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo, .header-right {display: flex; align-items: center;}
+
+.upper-header > .logo > div {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.header-link {
+    color: white;
+    line-height: 1;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.1s ease-in, 
+    background-color 0.1s ease-in;
+}
+
+.header-link .icon {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    margin-left: 3px;
+}
+
+.header-link:hover, .header-link:focus {
+    color: #006eff;
+}
+
+.lower-header-sticky {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: black;
+}
+
+.lower-nav-bar {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: left;
+}

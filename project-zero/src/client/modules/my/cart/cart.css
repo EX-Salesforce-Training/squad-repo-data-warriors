@@ -1,0 +1,34 @@
+@import "../app/app.css";
+
+.page-empty {
+    padding: 120px 0;
+    margin-bottom: 20px; 
+}
+
+.text-center {
+    text-align: center !important; 
+}
+
+.btn-continue {
+    background-color: #006eff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: color 0.2s ease-in, 
+    background-color 0.2s ease-in;
+}
+
+.btn-continue:hover {
+    background-color: #045dd1;
+}
+
+h1 {
+    color: #030303;
+    margin: 0 0 0.625em;
+}
