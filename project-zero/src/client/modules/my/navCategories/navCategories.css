@@ -1,3 +1,18 @@
 @import "../app/app.css"; 
 @import "../navbar/navbar.css";
 
+.nav-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #918e8e;
+    line-height: 1.375;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.1s ease-in, 
+    background-color 0.1s ease-in;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: white;
+}

@@ -1,7 +1,5 @@
 <template>
     <template for:each={navItems} for:item="item">
-        <div class="logo">
-            <div href="" class="header-link">{item}</div>
-        </div>
+        <li key={item.id}><a class="nav-link" href="">{item.Name}</a></li> 
     </template>
 </template>
