@@ -1,0 +1,28 @@
+@import "../app/app.css";
+
+.course{
+    padding: 10rem;
+
+}
+
+.course h2{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+.mb{
+    margin-bottom: 5rem;
+}
+.flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.btn{
+    display: block;
+    cursor: pointer;
+   text-align: center;
+   background-color: var(--orange-100);
+}

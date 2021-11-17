@@ -1,0 +1,43 @@
+@import '../app/app.css';
+
+.whyChooseUs{
+    background-color: var(--primary-color);
+    padding: 10rem;
+    text-align: center;
+   
+}
+.flex{
+    align-items: center;
+}
+
+
+.whyChooseUs-info{
+    width: 50%;
+}
+.whyChooseUs h2{
+    margin-bottom: 5rem;
+}
+.whyChooseUs-info .p{
+    background-color: var(--orange-100);
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.show-details p{
+    margin-bottom: 1rem;
+}
+.p-label{
+    margin-top: 1.5rem;
+}
+
+
+.whyChooseUs-media{
+    width: 50%;
+}
+.whyChooseUs-img{
+    margin: 0 auto;
+    width: 25rem;
+}
+

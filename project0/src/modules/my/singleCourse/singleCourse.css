@@ -1,0 +1,26 @@
+@import '../app/app.css';
+
+.box{
+    width: 30rem;
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: 5rem;
+   
+}
+
+.box img{
+    border-radius: 2rem 2rem 0 0;
+   
+}
+.box-info{
+    padding: 2rem;
+    line-height: 1.5;
+}
+.btn{
+    display: block;
+    cursor: pointer;
+   text-align: center;
+   background-color: var(--orange-100);
+}
+.btn:hover{
+    background-color: var(--primary-color);
+}

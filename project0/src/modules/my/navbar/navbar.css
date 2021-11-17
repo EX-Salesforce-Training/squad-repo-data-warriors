@@ -1,0 +1,12 @@
+@import '../app/app.css';
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+li:not(:nth-child(5)){
+    margin-right: 2.5rem;
+}

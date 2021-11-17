@@ -1,0 +1,38 @@
+<template>
+    <section class="whyChooseUs">
+
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="flex">
+
+                <!-- <div class="whyChooseUs-info">
+                    <h3>Slef-paced learning that works</h3>
+                    <p>Build projects step by step</p>
+                    <p>Designed for all levels</p>
+                    <p>Guidance every step of the way</p>
+                    <p>Launch Your Carrer</p>
+                </div> -->
+
+                <div class="whyChooseUs-info">
+
+                    <div class="p">
+                        <p class="p-label">Slef-paced learning that works</p>
+                        <a class="btn" onclick={toggleDetails}>{showOrHide}</a>
+                    </div>
+                    <template if:true={showDetails}>
+                        <div class="show-details">
+                            <p>Build projects step by step</p>
+                            <p>Designed for all levels</p>
+                            <p>Guidance every step of the way</p>
+                            <p>Launch Your Carrer</p>
+                        </div>
+                    </template>
+                </div>
+
+                <div class="whyChooseUs-media">
+                    <img src="../../../resources/editor.png" class="whyChooseUs-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

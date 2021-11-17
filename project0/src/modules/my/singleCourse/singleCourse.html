@@ -1,0 +1,13 @@
+<template>
+    <template for:each={courses} for:item="course">
+
+        <div key={course.Id} class="box">
+            <img src={course.Image} alt="Java programming image" class="course-img">
+            <div class="box-info">
+                <h4>{course.Name}</h4>
+                <p>{course.Description}</p>
+            </div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </template>
+</template>

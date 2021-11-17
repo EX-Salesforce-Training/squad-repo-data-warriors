@@ -1,0 +1,25 @@
+@import '../app/app.css';
+
+.banner{
+    display: flex;
+    align-items: center;
+    margin: 10rem auto;
+}
+
+.banner-img{
+    width: 50%;
+  
+}
+
+.banner-info{
+    width: 50%;
+    text-align: center;
+    
+}
+.banner-info h1{
+    margin: 2rem;
+}
+
+.banner-info {
+    padding: 2rem;
+}
