@@ -1,18 +1,70 @@
 <template>
-    <nav class="container nav">
-        <div>
-            <h2>Logo</h2>
+    <div class="container navbar">
+        <nav class="nav">
+            <div>
+                <h2>Deep School</h2>
 
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Learning Path</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#" class="btn">Sign Up</a></li>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="btn">Home</a></li>
 
-            </ul>
-        </div>
-    </nav>
+                    <li><a href="#" class="btn login" onclick={showLogin}>Log In</a></li>
+                    <li><a href="#" class="btn signup" onclick={showSignup}>Sign Up</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <template if:true={signup}>
+            <form action="#" class="form">
+                <a href="#" class="btn close" onclick={closeSignup}>x</a>
+                <div>
+                    <label>Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Username</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+
+                <div>
+                    <label>Confirm Password</label>
+                    <input type="password">
+                </div>
+
+                <button class="btn">Submit</button>
+
+            </form>
+        </template>
+        <template if:true={login}>
+
+            <form action="#" class="form">
+                <a href="#" class="btn close" onclick={closeLogin}>x</a>
+
+                <div>
+                    <label>Username</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+
+
+                <button class="btn">Login</button>
+
+            </form>
+        </template>
+    </div>
+
 </template>

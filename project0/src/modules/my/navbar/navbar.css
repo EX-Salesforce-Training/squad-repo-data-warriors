@@ -7,6 +7,45 @@
     margin: 2rem auto;
 }
 
-li:not(:nth-child(5)){
-    margin-right: 2.5rem;
+
+.navbar{
+    position: relative;
+}
+.link{
+    margin-right: 2rem;
+}
+.form{
+    background-color: var(--primary-color);
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    width: 40rem;
+   padding: 2rem;
+}
+label{
+    display: block;
+   margin-bottom: 1rem;
+   margin-top: 2rem;
+}
+input{
+    padding: 1rem 1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    background-color: var(--orange-50);
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+.close{
+    margin: 1rem;
+}
+
+.login:hover,.signup:hover{
+    
+    color: var(--orange-900);
 }
