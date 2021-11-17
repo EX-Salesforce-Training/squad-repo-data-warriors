@@ -1,5 +1,11 @@
 <template>
-    <template for:each={navItems} for:item="item">
-        <li key={item.id}><a class="nav-link" href="">{item.Name}</a></li> 
-    </template>
+    <div class="sticky">
+        <nav class="nav-lower">
+            <ul>
+                <template for:each={navDropdowns} for:item="category">
+                    <li key={category}><a class="" href=""><h3>{category}</h3></a></li> 
+                </template>
+            </ul>
+        </nav>
+    </div>
 </template>

@@ -1,11 +1,9 @@
 /* Basic Styles */
-*, *:before, *:after {
-    box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
-} 
 :host{
+    --mono-blue: #0a64b3;
+    --mono-black: #010509;
+    --mono-blue-offset: #05355e;
+
     --blue-50: #e5f4ff; 
     --blue-100: #cceaff; 
     --blue-200: #99d5ff; 
@@ -16,49 +14,71 @@
     --blue-700: #005a99; 
     --blue-800: #003c66; 
     --blue-900: #001e33; 
+
+    --white-offset: #b9b9b9;
 }
 
-h1 {
-    font-size: 4rem;
+*, *:before, *:after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+} 
+
+body{
+    /* font-family: Arial, Helvetica, sans-serif;  */
+    background-color: var(--mono-black);
+    max-width: 100%;
+    max-height: 100vh;
 }
+
+h1 {font-size: 6rem;}
 h2 {
-    font-size: 3rem;
+    font-size: 2em;
+    font-weight: 450;
+    letter-spacing: 3px;
 }
 h3 {
     font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
-h4 {
-    font-size: 1.5rem;
+h4 {font-size: 1.8;}
+
+ul {list-style: none;}
+li{display: inline-block;}
+
+li, a, button {
+    color: white;
+    text-decoration: none;
+} 
+
+.logo, .icon{
+    color: white;
+    fill: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.1s ease-in, background-color 0.1s ease-in;
 }
-h5 {
-    font-size: 1.2rem;
+.logo{margin-right: auto;}
+.logo:hover, .icon:hover, .logo:focus, .icon:focus {
+    color: #006eff;
 }
 
-
-body, header{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    max-width: 100%;
-}
-
-.container {
-    /* *zoom: 1; */
-    max-width: 1180px;
-    width: 95%;
+.container{
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.border-top {
-    border-top: 1px solid rgb(54, 54, 54);
+button {
+    padding: 9px 25px;
+    background-color: var(--mono-blue);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-
-.center {
-    text-align: center;
-}
-
-.flex, .flex-center {
-    display: flex;
-}
-.flex-center {
-    align-content: center;
+button:hover {
+    background-color: var(--blue-offset);
 }

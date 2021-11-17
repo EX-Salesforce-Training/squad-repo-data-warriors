@@ -1,69 +1,67 @@
 @import "../app/app.css";
-
-/* Navigation Bar Styles */
-.upper-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.logo, .header-right {display: flex; align-items: center;}
-
-.upper-header > .logo > div {
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-.header-link {
-    display: inline-block;
-    align-content: center;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    transition: color 0.1s ease-in, 
-    background-color 0.1s ease-in;
-}
-
-.header-link .icon {
-    width: 28px;
-    height: 28px;
-    fill: currentColor;
-    margin-left: 3px;
-}
-
-.header-link:hover, .header-link:focus {
-    color: #006eff;
-}
-
-.sticky-icons {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-}
-
-.nav-container-sticky {
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    background-color: black;
+.border-top {
     border-top: 1px solid rgb(54, 54, 54);
 }
 
-.nav-flex {
-    display:flex;
+/* Navigation Bar Styles */
+li, a {
+    /* font family weight and size can go here */
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+/* use header for nav */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end; /* pushes right and left to the far edges and evenly spaces the middle */
+    align-items: center;
+    padding: 20px 5%;
+}
+
+/* ask how to center search and cart icon in  */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.nav-links li {
+    display: inline-block;
+    
+    padding: 0px 20px;
+}
+.nav-links li a {
     align-content: center;
-    justify-content: flex-start;
+    transition: color 0.1s ease-in, background-color 0.1s ease-in;
+}
+.nav-links li a:hover{
+    color: #006eff;
+}
+li, a, button {
+    color: white;
+    text-decoration: none;
+} 
+
+.logo{
+    color: white;
+    fill: currentColor;
+    
+    text-decoration: none;
+    margin-right: auto;
+    cursor: pointer;
+    transition: color 0.1s ease-in, background-color 0.1s ease-in;
+}
+.logo:hover, .logo:focus {
+    color: #006eff;
 }
 
-.nav-padding {
-    padding: 0 20px 0 20px;
-}
+ ul .center-icons {
+    display: block;
+    margin-left: auto;
+    margin-block-end: auto;
+} 
 
-.nav-item  {
-    display: inline-flex;
-    text-transform: uppercase;
-    list-style-type: none;
-}
+
+
 
 
