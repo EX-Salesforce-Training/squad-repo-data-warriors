@@ -1,11 +1,20 @@
 <template>
-    <my-navbar oncheckout={handleCheckoutEvent}>
+    <my-navbar oncheckout={handleCheckoutEvent} oncheckback={handleCheckBackEvent}>
     </my-navbar>
     <template if:true={isCheckout}>
         <my-cart oncontinue={handleContinueEvent}>
         </my-cart>
     </template>
     <template if:true={isContinue}>
-       <my-hero></my-hero>
+       <my-hero oncheckback={handleCheckBackEvent}>
+       </my-hero>
+       <my-product-display oncheckback={handleCheckBackEvent}>
+       </my-product-display>
     </template>
+    <!-- <template if:true={isCheckBack}>
+        <my-check-back oncontinue={handleContinueEvent}>
+        </my-check-back>
+    </template> -->
+    <my-footer>
+    </my-footer>
 </template>

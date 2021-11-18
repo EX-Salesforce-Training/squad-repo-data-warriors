@@ -1,47 +1,85 @@
-@import "../app/app.css"; 
+@import '../app/app.css';
 
+/* hero image formatting */
 .hero-image {
     padding-top: 40px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../resources/hero-dark.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url('../resources/hero-dark.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 80vh;
-    margin-bottom:-60px;
-}
-
-.hero-banner-flex {
-    background-color: var(--blue-600);
-    padding: 0 2rem 0 2rem;
-    position: absolute;
-    bottom: 20vh;
-    text-align: center;
-    display: inline-block;
+    margin-bottom: -60px;
 }
 
 .hero-banner-flex h1 {
     display: inline-block;
 }
 
+.hero-banner-flex {
+    /* border: 1px solid red; */
+    padding: 2rem 0%;
+}
 .hero-text-title {
+    display: inline;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-size: 6rem;
+    color: rgb(247, 247, 247);
+    background-color: #1016c2;
+    opacity: 85%;
+    padding: 0.25rem 3%;
+}
+
+/* button formatting */
+.hero-container {
+    height: inherit;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column-reverse;
+    /* border: 1px solid red; */
+    padding-bottom: 17vh;
+}
+.btn-container {
+    opacity: 85%;
+    display: flex;
+    justify-content: flex-start;
+}
+button {
+    /* border: 1px solid rgb(143, 138, 138); */
+    outline: 1px;
+    padding: 12px 25px;
+    border-radius: 0px;
+    color: white;
+    margin-left: 3px;
+    background-color: black;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1016c2;
     color: white;
 }
 
-.hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-  }
+.btn-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 2%;
+}
 
-  .hero-text button:hover {
-    background-color: #555;
+.button {
+    padding: 9px 25px;
+    background-color: var(--mono-black);
     color: white;
-  }
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 5px;
+}
+.button:hover {
+    background-color: var(--mono-blue-offset);
+}

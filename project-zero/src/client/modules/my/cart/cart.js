@@ -10,4 +10,9 @@ export default class Cart extends LightningElement {
         });
         this.dispatchEvent(continueEvent);
     }
+    handleCheckBackEvent(event){
+        this.checkout = event.detail.checkout;
+        this.continue = event.detail.continue;
+        this.checkBack = event.detail.checkBack;
+    }
 }

@@ -4,4 +4,9 @@ export default class NavCategories extends LightningElement {
     navDropdowns = [
         "Home", "Snowboards", "Skis", "Brands", "Accessories", "Sale"
     ]
+    handleCheckBackEvent(event){
+        this.checkout = event.detail.checkout;
+        this.continue = event.detail.continue;
+        this.checkBack = event.detail.checkBack;
+    }
 }
