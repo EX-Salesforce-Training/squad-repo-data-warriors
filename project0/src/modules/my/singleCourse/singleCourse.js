@@ -1,6 +1,7 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 
 export default class SingleCourse extends LightningElement {
+  
     courses = [
         {
             Id: '0',
