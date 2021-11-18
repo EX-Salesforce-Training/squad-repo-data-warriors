@@ -6,4 +6,15 @@ export default class Hero extends LightningElement {
         this.continue = event.detail.continue;
         this.checkBack = event.detail.checkBack;
     }
+
+    handleCheckBackClick() {
+        const checkBackEvent = new CustomEvent('checkback', {
+            detail: {
+                checkBack: true,
+                checkout: false,
+                continue: false
+            }
+        });
+        this.dispatchEvent(checkBackEvent);
+    }
 }

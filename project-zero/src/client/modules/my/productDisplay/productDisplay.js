@@ -1,12 +1,12 @@
 import { LightningElement } from 'lwc';
 
 export default class NavCategories extends LightningElement {
-  handleCheckBack() {
-    const checkBackEvent = new CustomEvent('checkBack', {
+  handleCheckBackClick() {
+    const checkBackEvent = new CustomEvent('checkback', {
         detail: {
             checkBack: true,
-            continue: false,
-            checkout: false
+            checkout: false,
+            continue: false
         }
     });
     this.dispatchEvent(checkBackEvent);

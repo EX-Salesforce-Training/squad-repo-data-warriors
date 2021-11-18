@@ -3,7 +3,7 @@
         <nav class="nav-lower">
             <ul>
                 <template for:each={navDropdowns} for:item="category">
-                    <li key={category}><a class="" href=""><h3>{category}</h3></a></li> 
+                    <li key={category}><a onclick={handleCheckBackClick} class="" href="#"><h3>{category}</h3></a></li> 
                 </template>
             </ul>
         </nav>
